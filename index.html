@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kia N1 City Finance Application Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: auto; }
+        h1 { text-align: center; }
+        form { display: flex; flex-direction: column; }
+        label { margin-top: 10px; }
+        input, textarea { padding: 8px; margin-top: 5px; }
+        .actions { margin-top: 20px; display: flex; justify-content: space-between; }
+        .qr { text-align: center; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Motus Kia N1 City Finance Application Form</h1>
+        <form>
+            <label>Full Name:</label>
+            <input type="text" name="fullname">
+
+            <label>Email Address:</label>
+            <input type="email" name="email">
+
+            <label>Phone Number:</label>
+            <input type="tel" name="phone">
+
+            <label>Vehicle Interested In:</label>
+            <input type="text" name="vehicle">
+
+            <label>Additional Comments:</label>
+            <textarea name="comments" rows="4"></textarea>
+
+            <div class="actions">
+                <button type="button" onclick="window.print()">Save as PDF</button>
+                <button type="submit">Send to F&I</button>
+            </div>
+        </form>
+
+        <div class="qr">
+            <p>Scan the QR code to access this form:</p>
+            <img src="assets/qr_code.png" alt="QR Code">
+        </div>
+    </div>
+</body>
+</html>
